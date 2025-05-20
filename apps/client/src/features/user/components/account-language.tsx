@@ -4,6 +4,7 @@ import { updateUser } from "../services/user-service";
 import { useAtom } from "jotai";
 import { userAtom } from "../atoms/current-user-atom";
 import { useState } from "react";
+import { isRtl } from "@/lib/rtl-langs";
 
 export default function AccountLanguage() {
   const { t } = useTranslation();
@@ -35,6 +36,8 @@ function LanguageSwitcher() {
     setUser(updatedUser);
 
     i18n.changeLanguage(value);
+    const dir = isRtl(value) ? "rtl" : "ltr";
+    document.documentElement.dir = dir;
   };
 
   return (
@@ -51,6 +54,7 @@ function LanguageSwitcher() {
         { value: "ja-JP", label: "日本語 (Japanese)" },
         { value: "ko-KR", label: "한국어 (Korean)" },
         { value: "ru-RU", label: "Русский (Russian)" },
+        { value: "ar", label: "العربية (Arabic)" },
         { value: "zh-CN", label: "中文 (简体)" },
       ]}
       value={language || "en-US"}
