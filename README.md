@@ -1,62 +1,61 @@
-<div align="center">
-    <h1><b>Docmost</b></h1>
+<div align="center" dir="rtl">
+    <h1><b>Docmost (Arabic Version - RTL)</b></h1>
     <p>
-        Open-source collaborative wiki and documentation software.
+        برنامج مفتوح المصدر لإنشاء ويكي توثيق تعاوني. النسخة تدعم تغيير اللغة والعربية و RTL/LTR بسهولة تلقائيا.
         <br />
-        <a href="https://docmost.com"><strong>Website</strong></a> | 
-        <a href="https://docmost.com/docs"><strong>Documentation</strong></a> |
-        <a href="https://twitter.com/DocmostHQ"><strong>Twitter / X</strong></a>
+        <a href="https://docmost.com"><strong>الموقع الرسمي</strong></a> | 
+        <a href="https://docmost.com/docs"><strong>التوثيق</strong></a> |
+        <a href="https://twitter.com/DocmostHQ"><strong>تويتر / إكس</strong></a>
     </p>
 </div>
 <br />
 
-## Getting started
+## البداية
 
-To get started with Docmost, please refer to our [documentation](https://docmost.com/docs) or try our [cloud version](https://docmost.com/pricing) .
+للبدء مع دوكموست، يرجى مراجعة [التوثيق](https://docmost.com/docs) أو تجربة [الإصدار السحابي](https://docmost.com/pricing).
 
-## Features
+## الميزات
 
-- Real-time collaboration
-- Diagrams (Draw.io, Excalidraw and Mermaid)
-- Spaces
-- Permissions management
-- Groups
-- Comments
-- Page history
-- Search
-- File attachments
-- Embeds (Airtable, Loom, Miro and more)
-- Translations (10+ languages)
+- التعاون في الوقت الحقيقي  
+- الرسوم البيانية (Draw.io, Excalidraw و Mermaid)  
+- المساحات  
+- إدارة الصلاحيات  
+- المجموعات  
+- التعليقات  
+- سجل التعديلات  
+- البحث  
+- إرفاق الملفات  
+- التضمين (Airtable, Loom, Miro وأكثر)  
+- الترجمة (أكثر من 10 لغات)  
 
-### Screenshots
+### لقطات الشاشة
 
-<p align="center">
+<p align="center" dir="ltr">
 <img alt="home" src="https://docmost.com/screenshots/home.png" width="70%">
 <img alt="editor" src="https://docmost.com/screenshots/editor.png" width="70%">
 </p>
 
-### License
-Docmost core is licensed under the open-source AGPL 3.0 license.  
-Enterprise features are available under an enterprise license (Enterprise Edition).  
+### الترخيص  
+النسخة الأساسية من دوكموست مرخصة تحت رخصة AGPL 3.0 مفتوحة المصدر.  
+الميزات المؤسسية متاحة تحت ترخيص مؤسسي (الإصدار المؤسسي).  
 
-All files in the following directories are licensed under the Docmost Enterprise license defined in `packages/ee/License`.
-  - apps/server/src/ee
-  - apps/client/src/ee
-  - packages/ee
+جميع الملفات في المجلدات التالية مرخصة وفق ترخيص دوكموست المؤسسي الموجود في `packages/ee/License`:  
+  - apps/server/src/ee  
+  - apps/client/src/ee  
+  - packages/ee  
 
-### Contributing
+### المساهمة  
 
-See the [development documentation](https://docmost.com/docs/self-hosting/development)
+راجع [توثيق التطوير](https://docmost.com/docs/self-hosting/development) للمزيد عن كيفية المساهمة.
 
-## Thanks
-Special thanks to;
+## الشكر
+
+شكر خاص لـ;
 
 <img width="100" alt="Crowdin" src="https://github.com/user-attachments/assets/a6c3d352-e41b-448d-b6cd-3fbca3109f07" />
 
-[Crowdin](https://crowdin.com/) for providing access to their localization platform.
-
+[Crowdin](https://crowdin.com/) على توفير منصة الترجمة.
 
 <img width="48" alt="Algolia-mark-square-white" src="https://github.com/user-attachments/assets/6ccad04a-9589-4965-b6a1-d5cb1f4f9e94" />
 
-[Algolia](https://www.algolia.com/) for providing full-text search to the docs.
-
+[Algolia](https://www.algolia.com/) على توفير خاصية البحث النصي الكامل في التوثيق.
