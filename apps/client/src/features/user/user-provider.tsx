@@ -1,5 +1,6 @@
-import { useAtom } from "jotai";
+import { useAtom, useSetAtom } from "jotai";
 import { currentUserAtom } from "@/features/user/atoms/current-user-atom";
+import { directionAtom } from "@/features/user/atoms/direction-atom";
 import React, { useEffect } from "react";
 import useCurrentUser from "@/features/user/hooks/use-current-user";
 import { useTranslation } from "react-i18next";
@@ -15,6 +16,7 @@ export function UserProvider({ children }: React.PropsWithChildren) {
   const [, setCurrentUser] = useAtom(currentUserAtom);
   const { data, isLoading, error, isError } = useCurrentUser();
   const { i18n } = useTranslation();
+  const setDirection = useSetAtom(directionAtom);
   const [, setSocket] = useAtom(socketAtom);
   // fetch collab token on load
   const { data: collab } = useCollabToken();
@@ -48,9 +50,11 @@ export function UserProvider({ children }: React.PropsWithChildren) {
   useEffect(() => {
     if (data && data.user && data.workspace) {
       setCurrentUser(data);
-      i18n.changeLanguage(
-        data.user.locale === "en" ? "en-US" : data.user.locale,
-      );
+      const lang = data.user.locale === "en" ? "en-US" : data.user.locale;
+      i18n.changeLanguage(lang);
+      const dir = i18n.dir(lang) as "ltr" | "rtl";
+      setDirection(dir);
+      document.documentElement.setAttribute("dir", dir);
     }
   }, [data, isLoading]);
 
