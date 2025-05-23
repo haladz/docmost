@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { updateUser } from "../services/user-service";
 import { useAtom } from "jotai";
 import { userAtom } from "../atoms/current-user-atom";
+import { useSetAtom } from "jotai";
+import { directionAtom } from "../atoms/direction-atom";
 import { useState } from "react";
 
 export default function AccountLanguage() {
@@ -24,6 +26,7 @@ export default function AccountLanguage() {
 function LanguageSwitcher() {
   const { t, i18n } = useTranslation();
   const [user, setUser] = useAtom(userAtom);
+  const setDirection = useSetAtom(directionAtom);
   const [language, setLanguage] = useState(
     user?.locale === "en" ? "en-US" : user.locale,
   );
@@ -35,6 +38,9 @@ function LanguageSwitcher() {
     setUser(updatedUser);
 
     i18n.changeLanguage(value);
+    const dir = i18n.dir(value) as "ltr" | "rtl";
+    setDirection(dir);
+    document.documentElement.setAttribute("dir", dir);
   };
 
   return (

@@ -366,7 +366,10 @@ function Node({ node, style, dragHandle, tree }: NodeRendererProps<any>) {
       >
         <PageArrow node={node} onExpandTree={() => handleLoadChildren(node)} />
 
-        <div onClick={handleEmojiIconClick} style={{ marginRight: "4px" }}>
+        <div
+          onClick={handleEmojiIconClick}
+          style={{ marginInlineEnd: "4px" }}
+        >
           <EmojiPicker
             onEmojiSelect={handleEmojiSelect}
             icon={

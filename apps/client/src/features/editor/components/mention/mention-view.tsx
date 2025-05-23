@@ -48,7 +48,7 @@ export default function MentionView(props: NodeViewProps) {
           className={classes.pageMentionLink}
         >
           {page?.icon ? (
-            <span style={{ marginRight: "4px" }}>{page.icon}</span>
+            <span style={{ marginInlineEnd: "4px" }}>{page.icon}</span>
           ) : (
             <ActionIcon
               variant="transparent"
