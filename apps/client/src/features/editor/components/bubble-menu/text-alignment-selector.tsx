@@ -88,7 +88,7 @@ export const TextAlignmentSelector: FC<TextAlignmentProps> = ({
                 rightSection={
                   activeItem.name === item.name && <IconCheck size={16} />
                 }
-                justify="left"
+                justify="start"
                 fullWidth
                 onClick={() => {
                   item.command();
