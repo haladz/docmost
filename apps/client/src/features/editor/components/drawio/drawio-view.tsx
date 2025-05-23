@@ -148,7 +148,7 @@ export default function DrawioView(props: NodeViewProps) {
               style={{
                 position: "absolute",
                 top: 8,
-                right: 8,
+                insetInlineEnd: 8,
               }}
             >
               <IconEdit size={18} />

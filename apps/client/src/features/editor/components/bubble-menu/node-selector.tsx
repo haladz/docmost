@@ -132,7 +132,7 @@ export const NodeSelector: FC<NodeSelectorProps> = ({
                 rightSection={
                   activeItem.name === item.name && <IconCheck size={16} />
                 }
-                justify="left"
+                justify="start"
                 fullWidth
                 onClick={() => {
                   item.command();

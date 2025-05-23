@@ -148,7 +148,7 @@ export const ColorSelector: FC<ColorSelectorProps> = ({
                 key={index}
                 variant="default"
                 leftSection={<span style={{ color }}>A</span>}
-                justify="left"
+                justify="start"
                 fullWidth
                 rightSection={
                   editor.isActive("textStyle", { color }) && (

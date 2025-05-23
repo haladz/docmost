@@ -12,12 +12,12 @@
   font-weight: 400;
   width: 100%;
 
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
   }
 
   @media print {
@@ -81,9 +81,9 @@
   }
 
   blockquote {
-    padding-left: 25px;
-    padding-right: 25px;
-    border-left: 2px solid var(--mantine-color-gray-6);
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    border-inline-start: 2px solid var(--mantine-color-gray-6);
     background-color: light-dark(
       var(--mantine-color-gray-0),
       var(--mantine-color-dark-8)
@@ -163,18 +163,18 @@
   }
 
   .alignLeft {
-    margin-left: 0;
-    margin-right: auto;
+    margin-inline-start: 0;
+    margin-inline-end: auto;
   }
 
   .alignRight {
-    margin-right: 0;
-    margin-left: auto;
+    margin-inline-end: 0;
+    margin-inline-start: auto;
   }
 
   .alignCenter {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 }
 

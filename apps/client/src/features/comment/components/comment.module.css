@@ -8,7 +8,7 @@
 
 .textSelection {
     margin-top: 4px;
-    border-left: 2px solid var(--mantine-color-gray-6);
+    border-inline-start: 2px solid var(--mantine-color-gray-6);
     padding: 8px;
     background: var(--mantine-color-gray-light);
     cursor: pointer;
@@ -27,8 +27,8 @@
         white-space: pre-wrap;
         word-break: break-word;
         max-height: 20vh;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-inline-start: 6px;
+        padding-inline-end: 6px;
         margin-top: 10px;
         margin-bottom: 2px;
         overflow: hidden auto;

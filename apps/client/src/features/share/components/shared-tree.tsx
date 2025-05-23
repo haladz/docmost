@@ -143,7 +143,7 @@ function Node({ node, style, tree }: NodeRendererProps<any>) {
         }}
       >
         <PageArrow node={node} />
-        <div style={{ marginRight: "4px" }}>
+        <div style={{ marginInlineEnd: "4px" }}>
           <EmojiPicker
             onEmojiSelect={() => {}}
             icon={

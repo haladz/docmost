@@ -85,7 +85,7 @@ function EmojiPicker({
               position: "absolute",
               zIndex: 2,
               bottom: "1rem",
-              right: "1rem",
+              insetInlineEnd: "1rem",
             }}
             onClick={handleRemoveEmoji}
           >
