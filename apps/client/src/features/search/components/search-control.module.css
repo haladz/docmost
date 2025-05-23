@@ -1,7 +1,7 @@
 .root {
     height: 34px;
-    padding-left: var(--mantine-spacing-sm);
-    padding-right: 4px;
+    padding-inline-start: var(--mantine-spacing-sm);
+    padding-inline-end: 4px;
     border-radius: var(--mantine-radius-md);
     color: var(--mantine-color-placeholder);
     border: 1px solid;
@@ -17,8 +17,8 @@
     }
 
     @mixin rtl {
-        padding-left: 4px;
-        padding-right: var(--mantine-spacing-sm);
+        padding-inline-start: 4px;
+        padding-inline-end: var(--mantine-spacing-sm);
     }
 }
 

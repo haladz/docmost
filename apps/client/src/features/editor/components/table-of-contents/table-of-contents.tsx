@@ -170,7 +170,7 @@ export const TableOfContents: FC<TableOfContentsProps> = (props) => {
               [classes.linkActive]: item.element === activeElement,
             })}
             style={{
-              paddingLeft: `calc(${item.level} * var(--mantine-spacing-md))`,
+              paddingInlineStart: `calc(${item.level} * var(--mantine-spacing-md))`,
             }}
           >
             {item.label}

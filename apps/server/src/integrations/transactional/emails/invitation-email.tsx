@@ -22,7 +22,7 @@ export const InvitationEmail = ({ inviteLink }: Props) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          paddingLeft: '15px',
+          paddingInlineStart: '15px',
           paddingBottom: '15px',
         }}
       >
